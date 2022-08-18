@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+# Access Private Data from Ethereum Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+We will build a simple contract, along with a Hardhat Test, to demonstrate this. Our contract will attempt to store data in private variables hoping that nobody will be able to read it's value.
 
-Try running some of the following tasks:
+The contract will take in password and username in its contructor and will store them in private variables.
+
+User will somehow be able to access those private variables.
+
+
+> Usage 
 
 ```shell
-npx hardhat help
+npm install
 npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+
 ```
